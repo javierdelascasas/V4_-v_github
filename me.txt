@@ -1,0 +1,5 @@
+HTML 5
+CSS 5
+JS 3
+
+Jag känner mig positiv till att lära mig JS, Front-end är minst lika viktig som Back-end och jag vill kunna ha kunskapen att utföra båda delar i ett projekt.
