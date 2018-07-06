@@ -1,0 +1,35 @@
+============
+ Min format
+============
+
+Types:
+Versaler följd av "."
+
+GENERAL. LIUTENANT. GRUNT.
+
+Booleans:
+Attribut följd av ","
+
+intrepid,spineless,agoraphpbic,moronic
+
+Values:
+Småbokstäver följd av ":" och value
+
+name:?
+
+Child:
+Mellan parenteser
+
+
+Format: TYPE.value:?,...,boolean,...,(child)
+
+
+Exempel:
+
+GENERAL.name:Peter,age:35,old,slow(LIUTENANT.name:Olof,young())
+
+
+
+Encode data:
+
+GENERAL.name:Guy,age:81,old,slow(GENERAL.name:Maria,old,strong(LIUTENANT.age:45,active,senior))
