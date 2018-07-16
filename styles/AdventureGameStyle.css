@@ -11,11 +11,25 @@
 html {
   height: 100%;
 }
+@keyframes epicBodyColor {
+  0% {
+    background-color: black;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: black;
+  }
+}
 body {
   background-color: black;
   color: white;
   height: 100%;
   font-family: 'Dosis', sans-serif;
+  animation-name: epicBodyColor;
+  animation-duration: 1.25s;
+  animation-iteration-count: infinite;
 }
 .pageWrapper {
   width: 75%;
@@ -32,8 +46,8 @@ h1 {
 }
 h1:hover {
   color: red;
-  transform: scale(2, 3);
-  transition: color 1s ease, transform 2s ease;
+  transform: scale(2, 3) rotate(1500deg);
+  transition: color 1s ease, transform 1.19s ease;
 }
 @keyframes imgSkewing {
   0% {
@@ -58,7 +72,7 @@ img {
   margin-right: auto;
   height: 400px;
   animation-name: imgSkewing;
-  animation-duration: 2s;
+  animation-duration: 1.78s;
   animation-iteration-count: infinite;
 }
 .contentWrapper {
@@ -75,7 +89,7 @@ p {
     transform: scaleY(0);
   }
   50% {
-    transform: scaleY(4);
+    transform: scaleY(2);
   }
   100% {
     transform: scaleY(0);
@@ -86,8 +100,8 @@ a {
   font-style: inherit;
 }
 li:hover {
-  transform: scale(0.1, 0.1);
-  transition: transform 1s ease;
+  transform: translate(-500px, 0px);
+  transition: transform 0.25s ease;
 }
 h3 {
   width: 100%;
