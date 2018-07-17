@@ -15,11 +15,38 @@ html{
     height: 100%;
 }
 
+@keyframes epicBodyColor{
+    0%{
+        background-color: black;
+    }
+    20%{
+        background-color: white;
+    }
+    40%{
+        background-color: green;
+    }
+    60%{
+        background-color:red;
+    }
+    70%{
+        background-color: blue;
+    }
+    80%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: black;
+    }
+}
+
 body{
     background-color: black;
     color: white;
     height: 100%;
     font-family: 'Dosis', sans-serif;
+    animation-name: epicBodyColor;
+    animation-duration: 1.25s;
+    animation-iteration-count: infinite;
 }
 
 .pageWrapper {
@@ -36,10 +63,37 @@ h1{
     text-align: center;
 }
 
+h1:hover {
+    color: red;
+    transform: scale(2,3) rotate(1500deg);
+    transition: color 1s ease, transform 1.19s ease;    
+}
+
+@keyframes imgSkewing {
+    0%{
+        transform: skewX(0deg);
+    }
+    25%{
+        transform: skewX(20deg);
+    }
+    50%{
+        transform: skewX(0deg);
+    }
+    75%{
+        transform: skewX(-20deg);
+    }
+    100%{
+        transform: skewX(0deg);
+    }
+}
+
 img{
     display: block;
     .centered();
     height: 400px;
+    animation-name: imgSkewing;
+    animation-duration: 1.78s;
+    animation-iteration-count: infinite;
 }
 
 .contentWrapper{
@@ -48,12 +102,34 @@ img{
 
 p{
     font-size: 1.5em;
+    animation-name: linkAwesomeAnimation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes linkAwesomeAnimation {
+    0%{
+        transform: scaleY(0);
+    }
+    50%{
+        transform: scaleY(2);
+    }
+    100%{
+        transform: scaleY(0);
+    }
+
 }
 
 a{
     font-size: 2em;
     font-style: inherit;
 }
+
+li:hover {
+    transform: translate(-500px,0px);
+    transition: transform 0.25s ease;
+}
+
 
 h3{
     width: 100%;

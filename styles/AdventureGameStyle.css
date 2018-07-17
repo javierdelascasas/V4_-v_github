@@ -15,7 +15,19 @@ html {
   0% {
     background-color: black;
   }
-  50% {
+  20% {
+    background-color: white;
+  }
+  40% {
+    background-color: green;
+  }
+  60% {
+    background-color: red;
+  }
+  70% {
+    background-color: blue;
+  }
+  80% {
     background-color: yellow;
   }
   100% {
